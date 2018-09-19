@@ -46,13 +46,12 @@ Installing Required Software
 You will need to install some database software plus the associated
 python library so that Biopython can "talk" to the database. In this
 example we'll talk about the most common choice, MySQL. How you do this
-will also depend on your operating system, for example on a Debian or
-Ubuntu Linux machine try this:
+will also depend on your operating system, for example on a **Debian or
+Ubuntu Linux** machine try this:
 
 ``` bash
 sudo apt-get install mysql-common mysql-server python-mysqldb
 ```
-
 It will also be important to have perl (to run some of the setup
 scripts). Again, on a Debian or Ubuntu Linux machine try this:
 
@@ -62,7 +61,16 @@ sudo apt-get install perl
 
 You may find perl is already installed.
 
-For Windows users, see [BioSQL on Windows](BioSQL_Windows "wikilink").
+For **Windows** users, see [BioSQL on Windows](BioSQL_Windows "wikilink").
+
+For the **cygwin** platform you can use [apt-cyg](https://github.com/transcode-open/apt-cyg):
+``` bash
+apt-cyg install mysql mysql-server
+```
+and for interfacing python with mysql use mysql-connector. You can install it using pip:
+``` bash
+pip install mysql-connector
+```
 
 Downloading the BioSQL Schema & Scripts
 ---------------------------------------
